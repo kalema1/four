@@ -18,7 +18,11 @@ const cube = new THREE.Mesh(geometry, material); // create a mesh with geometry 
 scene.add(cube); // add the mesh to the scene
 
 // Camera
-const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height); // (fov : Number, aspect : Number, near : Number, far : Number) fov — Camera frustum vertical field of view. aspect — Camera frustum aspect ratio. near — Camera frustum near plane. far — Camera frustum far plane.
+const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height);
+/* (fov : Number, aspect : Number, near : Number, far : Number) 
+ fov — Camera frustum vertical field of view. 
+ aspect — Camera frustum aspect ratio. 
+ near — Camera frustum near plane. far — Camera frustum far plane. */
 camera.position.z = 3;
 scene.add(camera);
 
